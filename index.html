@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="w-screen h-screen flex justify-center items-center bg-veryDarkBlue">
+
+  <main class="w-26 bg-darkBlue rounded-3xl p-8 font-overpass">
+    <div class="main-container">
+      <div class="star">
+        <img class="rounded-full bg-lightDarkBlue p-5" src="images/icon-star.svg" alt="">
+      </div>
+  <!-- Rating state start -->
+  <div class="title text-white text-3xl pt-8">
+  How did we do?
+</div>
+
+<div class="paragraph text-lightGrey pt-2 pb-5">
+  Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!
+</div>
+<div class="rating flex flex-row justify-around text-center pb-6 text-lightGrey">
+  <button class="btn w-12 h-12 rounded-full bg-lightDarkBlue hover:bg-lightGrey hover:text-white focus:text-white focus:bg-orange">1</button>
+  <button class="btn w-12 h-12 rounded-full bg-lightDarkBlue hover:bg-lightGrey hover:text-white focus:text-white focus:bg-orange">2</button>
+  <button class="btn w-12 h-12 rounded-full bg-lightDarkBlue hover:bg-lightGrey hover:text-white focus:text-white focus:bg-orange">3</button>
+  <button class="btn w-12 h-12 rounded-full bg-lightDarkBlue hover:bg-lightGrey hover:text-white focus:text-white focus:bg-orange">4</button>
+  <button class="btn w-12 h-12 rounded-full bg-lightDarkBlue hover:bg-lightGrey hover:text-white focus:text-white focus:bg-orange">5</button>
+</div>
+
+<button type="submit" id="submit" class="rounded-full bg-orange w-full p-2 uppercase text-white text-md tracking-widest hover:bg-white hover:text-orange">
+  Submit
+</button>
+
+</div>
+
+<div class="thank-you flex flex-col items-center justify-center text-center hidden">
+  <img class="m-auto block pb-11" src="/images/illustration-thank-you.svg" alt="">
+
+ <p class="text-orange bg-lightDarkBlue rounded-2xl px-4 py-1">You selected <span id="rating"></span> out of 5</p>
+ 
+ <h1 class="text-white text-2xl pt-8 ">Thank you!</h1>
+ <p class="text-lightGrey pt-4"> We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+</div>
+
+
+</main>
+  <!-- Thank you state end -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="index.js"></script>
+</body>
+
+</html>
